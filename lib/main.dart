@@ -1,0 +1,21 @@
+import 'package:flutter/material.dart';
+import 'my_home.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  //const MyApp({Key? key}) : super(key: key);
+
+  // This widget is the root of your application.
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+        title: 'WhatsApp',
+        theme: ThemeData(
+          primaryColor: Color(0xFF075E54),
+        ),
+        home: MyHome());
+  }
+}
